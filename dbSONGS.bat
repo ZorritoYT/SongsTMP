@@ -14,11 +14,11 @@ echo Escribe el numero de la cancion a descargar
 echo.
 echo Commandos : return(salir) stop(Detener musica)
 echo.
-if not exist "laresaka-supermerk2.mp3" "%locate%\batbox" /c 0x4 /d "echo 1) laresaka-supermerk2 (Requiere download)"
-if exist "laresaka-supermerk2.mp3" "%locate%\batbox" /c 0xa /d "echo 1) laresaka-supermerk2"
+if not exist "laresaka-supermerk2.mp3" "%locate%\batbox" /c 0x4 /d " 1) laresaka-supermerk2 (Requiere download)"
+if exist "laresaka-supermerk2.mp3" "%locate%\batbox" /c 0xa /d " 1) laresaka-supermerk2"
 echo.
-if not exist "MegalovaniaPianoCover.mp3" "%locate%\batbox" /c 0x4 /d "echo 2) Megalovania Undertale (Piano Cover) [Requiere download]"
-if exist "MegalovaniaPianoCover.mp3" "%locate%\batbox" /c 0xa /d "echo 2) Megalovania Undertale [Piano Cover]"
+if not exist "MegalovaniaPianoCover.mp3" "%locate%\batbox" /c 0x4 /d " 2) Megalovania Undertale (Piano Cover) [Requiere download]"
+if exist "MegalovaniaPianoCover.mp3" "%locate%\batbox" /c 0xa /d " 2) Megalovania Undertale [Piano Cover]"
 echo.
 echo.
 set/p input="SongsDB/> "
