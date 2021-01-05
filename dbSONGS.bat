@@ -18,7 +18,10 @@ if not exist "laresaka-supermerk2.mp3" "%locate%\batbox" /c 0x4 /d " 1) laresaka
 if exist "laresaka-supermerk2.mp3" "%locate%\batbox" /c 0xa /d " 1) laresaka-supermerk2"
 echo.
 if not exist "MegalovaniaPianoCover.mp3" "%locate%\batbox" /c 0x4 /d " 2) Megalovania Undertale (Piano Cover) [Requiere download]"
-if exist "MegalovaniaPianoCover.mp3" "%locate%\batbox" /c 0xa /d " 2) Megalovania Undertale [Piano Cover]"
+if exist "MegalovaniaPianoCover.mp3" "%locate%\batbox" /c 0xa /d " 2) Megalovania Undertale (Piano Cover)"
+echo.
+if not exist "Laur-Sound-Chimera.mp3" "%locate%\batbox" /c 0x4 /d " 3) Laur - Sound Chimera [Requiere download]"
+if exist "Laur-Sound-Chimera.mp3" "%locate%\batbox" /c 0xa /d " 3) Laur - Sound Chimera"
 echo.
 echo.
 set/p input="SongsDB/> "
@@ -29,6 +32,9 @@ if not exist "laresaka-supermerk2.mp3" if "%input%"=="1" wget https://github.com
 
 if exist "MegalovaniaPianoCover.mp3" if "%input%"=="2" start dlc -w -p "MegalovaniaPianoCover.mp3"
 if not exist "MegalovaniaPianoCover.mp3" if "%input%"=="2" wget https://github.com/ZorritoYT/SongsTMP/raw/main/MegalovaniaPianoCover.mp3 & del /q .wget-hsts & start dlc -w -p "MegalovaniaPianoCover.mp3"
+
+if exist "Laur-Sound-Chimera.mp3" if "%input%"=="3" start dlc -w -p "Laur-Sound-Chimera.mp3"
+if not exist "Laur-Sound-Chimera.mp3" if "%input%"=="3" wget https://github.com/ZorritoYT/SongsTMP/raw/main/Laur-Sound-Chimera.mp3 & del /q .wget-hsts & start dlc -w -p "Laur-Sound-Chimera.mp3"
 goto loop
 :endS
 taskkill /f /im dlc.exe /t
