@@ -17,6 +17,7 @@ echo.
 if not exist "laresaka-supermerk2.mp3" "%locate%\batbox" /c 0x4 /d "echo 1) laresaka-supermerk2 (Requiere download)"
 if exist "laresaka-supermerk2.mp3" "%locate%\batbox" /c 0xa /d "echo 1) laresaka-supermerk2"
 echo.
+echo.
 set/p input="SongsDB/> "
 if "%input%"=="return" exit
 if "%input%"=="stop" goto endS
