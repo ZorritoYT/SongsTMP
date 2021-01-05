@@ -14,7 +14,8 @@ echo Escribe el numero de la cancion a descargar
 echo.
 echo Commandos : return(salir) stop(Detener musica)
 echo.
-echo 1) laresaka-supermerk2
+if not exist "laresaka-supermerk2.mp3" "%locate%\batbox" /c 0x4 /d "echo 1) laresaka-supermerk2 (Requiere download)"
+if exist "laresaka-supermerk2.mp3" "%locate%\batbox" /c 0xa /d "echo 1) laresaka-supermerk2"
 echo.
 set/p input="SongsDB/> "
 if "%input%"=="return" exit
