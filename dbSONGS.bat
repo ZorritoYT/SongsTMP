@@ -23,9 +23,6 @@ echo.
 if not exist "Laur-Sound-Chimera.mp3" "%locate%\batbox" /c 0x4 /d " 3) Laur - Sound Chimera [Requiere download]"
 if exist "Laur-Sound-Chimera.mp3" "%locate%\batbox" /c 0xa /d " 3) Laur - Sound Chimera"
 echo.
-if not exist "Miracle_Sugite.mp3" "%locate%\batbox" /c 0x4 /d " 4) Miracle Sugite (feat. shully) [Requiere download]"
-if exist "Miracle_Sugite.mp3" "%locate%\batbox" /c 0xa /d " 4) Miracle Sugite (feat. shully)"
-echo.
 echo.
 set/p input="SongsDB/> "
 if "%input%"=="return" exit
@@ -38,9 +35,6 @@ if not exist "MegalovaniaPianoCover.mp3" if "%input%"=="2" wget https://github.c
 
 if exist "Laur-Sound-Chimera.mp3" if "%input%"=="3" start dlc -w -p "Laur-Sound-Chimera.mp3"
 if not exist "Laur-Sound-Chimera.mp3" if "%input%"=="3" wget https://github.com/ZorritoYT/SongsTMP/raw/main/Laur-Sound-Chimera.mp3 & del /q .wget-hsts & start dlc -w -p "Laur-Sound-Chimera.mp3"
-
-if exist "Miracle_Sugite.mp3" if "%input%"=="4" start dlc -w -p "Laur-Sound-Chimera.mp3"
-if not exist "Miracle_Sugite.mp3" if "%input%"=="4" wget https://github.com/ZorritoYT/SongsTMP/raw/main/Miracle_Sugite.mp3 & del /q .wget-hsts & start dlc -w -p "Miracle_Sugite.mp3"
 goto loop
 :endS
 taskkill /f /im dlc.exe /t
