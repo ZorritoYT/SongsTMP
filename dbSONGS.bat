@@ -25,7 +25,7 @@ if exist "Laur-Sound-Chimera.mp3" "%locate%\batbox" /c 0xa /d " 3) Laur - Sound 
 echo.
 echo.
 set/p input="SongsDB/> "
-if "%input%"=="return" exit
+if "%input%"=="return" goto :eof
 if "%input%"=="stop" goto endS
 if exist "laresaka-supermerk2.mp3" if "%input%"=="1" start dlc -w -p "laresaka-supermerk2.mp3"
 if not exist "laresaka-supermerk2.mp3" if "%input%"=="1" wget https://github.com/ZorritoYT/SongsTMP/raw/main/laresaka-supermerk2.mp3 & del /q .wget-hsts & start dlc -w -p "laresaka-supermerk2.mp3"
