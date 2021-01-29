@@ -40,8 +40,9 @@ if not exist "MegalovaniaPianoCover.mp3" if "%input%"=="2" wget https://github.c
 if exist "Laur-Sound-Chimera.mp3" if "%input%"=="3" start dlc -w -p "Laur-Sound-Chimera.mp3"
 if not exist "Laur-Sound-Chimera.mp3" if "%input%"=="3" wget https://github.com/ZorritoYT/SongsTMP/raw/main/Laur-Sound-Chimera.mp3 & del /q .wget-hsts & start dlc -w -p "Laur-Sound-Chimera.mp3"
 
+if not exist "DeadToMe.bmp" if "%input%"=="4" wget https://github.com/ZorritoYT/SongsTMP/raw/main/DeadToMe.bmp & del /q .wget-hsts
 if exist "DeadToMe.mp3" if "%input%"=="4" start dlc -w -p "DeadToMe.mp3" & start /b cmdbkg "%locate%\Files\Sounds\DeadToMe.bmp" 1
-if not exist "DeadToMe.mp3" if "%input%"=="4" wget https://github.com/ZorritoYT/SongsTMP/raw/main/DeadToMe.mp3 & wget https://github.com/ZorritoYT/SongsTMP/raw/main/DeadToMe.bmp & del /q .wget-hsts & start dlc -w -p "DeadToMe.mp3" & start /b cmdbkg "%locate%\Files\Sounds\DeadToMe.bmp" 1
+if not exist "DeadToMe.mp3" if "%input%"=="4" wget https://github.com/ZorritoYT/SongsTMP/raw/main/DeadToMe.mp3 & del /q .wget-hsts & start dlc -w -p "DeadToMe.mp3" & start /b cmdbkg "%locate%\Files\Sounds\DeadToMe.bmp" 1
 goto loop
 
 :endS
