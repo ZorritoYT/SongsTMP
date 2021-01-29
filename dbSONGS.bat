@@ -5,6 +5,7 @@ setlocal enabledelayedexpansion
 if %1=="" exit
 set locate=%1
 set reproducing=666
+cd "%locate%\Files"
 if defined backg call centerwindow.bat
 if defined backg if not "%backg%"=="false" start /b cmdbkg "%backg%" 33 incluideborders
 if defined backg if "%backg%"=="false" start /b cmdbkg "%locate%\Files\Sounds\Background\Black.bmp" 1
