@@ -5,7 +5,7 @@ setlocal enabledelayedexpansion
 if %1=="" exit
 set locate=%1
 set reproducing=666
-..\cmdbkg background\Black.bmp 33
+start /b ..\cmdbkg background\Black.bmp 33
 :loop
 title SongDB
 mode 120,30
