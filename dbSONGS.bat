@@ -50,7 +50,7 @@ if not exist "DeadToMe.bmp" if "%input%"=="4" wget https://github.com/ZorritoYT/
 if not exist "DeadToMe.mp3" if "%input%"=="4" wget https://github.com/ZorritoYT/SongsTMP/raw/main/DeadToMe.mp3 & del /q .wget-hsts & start dlc -w -p "DeadToMe.mp3" & start /b ../cmdbkg DeadToMe.bmp 33 incluideborders
 
 if exist "SunFlower.mp3" if "%input%"=="5" start dlc -w -p "SunFlower.mp3" & start /b ../cmdbkg SunFlower.bmp 33
-if not exist "SunFlower.bmp" if "%input%"=="5" wget https://github.com/ZorritoYT/SongsTMP/raw/main/SunFlower.bmp & timeout 1 /nobreak >nul
+if not exist "SunFlower.bmp" if "%input%"=="5" wget https://github.com/ZorritoYT/SongsTMP/raw/main/SunFlower.bmp & del /q .wget-hsts
 if not exist "SunFlower.mp3" if "%input%"=="5" wget https://github.com/ZorritoYT/SongsTMP/raw/main/SunFlower.mp3 & del /q .wget-hsts & start dlc -w -p "SunFlower.mp3" & start /b ../cmdbkg SunFlower.bmp 33 incluideborders
 
 goto loop
