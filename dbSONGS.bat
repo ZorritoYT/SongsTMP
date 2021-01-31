@@ -57,4 +57,5 @@ goto loop
 :endS
 taskkill /f /im dlc.exe /t
 taskkill /f /im "dlc.exe *32" /t
+start /b ..\cmdbkg background\Black.bmp 33
 goto loop
