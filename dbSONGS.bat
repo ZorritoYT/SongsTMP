@@ -53,7 +53,7 @@ if exist "SunFlower.mp3" if "%input%"=="5" start dlc -w -p "SunFlower.mp3" & sta
 if not exist "SunFlower.bmp" if "%input%"=="4" wget https://github.com/ZorritoYT/SongsTMP/raw/main/SunFlower.bmp & del /q .wget-hsts
 if not exist "SunFlower.mp3" if "%input%"=="5" wget https://github.com/ZorritoYT/SongsTMP/raw/main/SunFlower.mp3 & del /q .wget-hsts & start /b ../cmdbkg SunFlower.bmp 33 & start dlc -w -p "SunFlower.mp3"
 
-goto loop
+goto loopd
 
 :endS
 taskkill /f /im dlc.exe /t
