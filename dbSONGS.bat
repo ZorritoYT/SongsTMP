@@ -26,11 +26,17 @@ echo.
 if not exist "Laur-Sound-Chimera.mp3" "%locate%\batbox" /c 0x4 /d " 3) Laur - Sound Chimera [Requiere download]"
 if exist "Laur-Sound-Chimera.mp3" "%locate%\batbox" /c 0xa /d " 3) Laur - Sound Chimera"
 echo.
-if not exist "DeadToMe.mp3" "%locate%\batbox" /c 0x4 /d " 4) Dead To Me (feat. Lox Chatterbox)"
+if not exist "DeadToMe.mp3" "%locate%\batbox" /c 0x4 /d " 4) Dead To Me (feat. Lox Chatterbox) [Requiere download]"
 if exist "DeadToMe.mp3" "%locate%\batbox" /c 0xa /d " 4) Dead To Me (feat. Lox Chatterbox)"
 echo.
-if not exist "SunFlower.mp3" "%locate%\batbox" /c 0x4 /d " 5) Post Malone, Swae Lee - Sunflower"
+if not exist "SunFlower.mp3" "%locate%\batbox" /c 0x4 /d " 5) Post Malone, Swae Lee - Sunflower [Requiere download]"
 if exist "SunFlower.mp3" "%locate%\batbox" /c 0xa /d " 5) Post Malone, Swae Lee - Sunflower"
+echo.
+if not exist "Ghost.mp3" "%locate%\batbox" /c 0x4 /d " 6) Krewella - Ghost [Requiere download]"
+if exist "Ghost.mp3" "%locate%\batbox" /c 0xa /d " 6) Krewella - Ghost"
+echo.
+if not exist "XD.mp3" "%locate%\batbox" /c 0x4 /d " 7) XD [Requiere download]"
+if exist "XD.mp3" "%locate%\batbox" /c 0xa /d " 7) XD"
 echo.
 echo.
 set/p input="SongsDB/> "
@@ -52,6 +58,14 @@ if not exist "DeadToMe.mp3" if "%input%"=="4" wget https://github.com/ZorritoYT/
 if exist "SunFlower.mp3" if "%input%"=="5" start dlc -w -p "SunFlower.mp3" & start /b ../cmdbkg SunFlower.bmp 33
 if not exist "SunFlower.bmp" if "%input%"=="5" wget https://github.com/ZorritoYT/SongsTMP/raw/main/SunFlower.bmp & del /q .wget-hsts
 if not exist "SunFlower.mp3" if "%input%"=="5" wget https://github.com/ZorritoYT/SongsTMP/raw/main/SunFlower.mp3 & del /q .wget-hsts & start dlc -w -p "SunFlower.mp3 & start /b ../cmdbkg SunFlower.bmp 33
+
+if exist "Ghost.mp3" if "%input%"=="6" start dlc -w -p "Ghost.mp3" & start /b ../cmdbkg Ghost.bmp 33
+if not exist "Ghost.bmp" if "%input%"=="6" wget https://github.com/ZorritoYT/SongsTMP/raw/main/Ghost.bmp & del /q .wget-hsts
+if not exist "Ghost.mp3" if "%input%"=="6" wget https://github.com/ZorritoYT/SongsTMP/raw/main/Ghost.mp3 & del /q .wget-hsts & start dlc -w -p "Ghost.mp3 & start /b ../cmdbkg Ghost.bmp 33
+
+if exist "XD.mp3" if "%input%"=="7" start dlc -w -p "XD.mp3" & start /b ../cmdbkg xd.bmp 33
+if not exist "xd.bmp" if "%input%"=="7" wget https://github.com/ZorritoYT/SongsTMP/raw/main/xd.bmp & del /q .wget-hsts
+if not exist "XD.mp3" if "%input%"=="7" wget https://github.com/ZorritoYT/SongsTMP/raw/main/XD.mp3 & del /q .wget-hsts & start dlc -w -p "XD.mp3 & start /b ../cmdbkg xd.bmp 33
 
 goto loop
 
