@@ -1,14 +1,15 @@
 taskkill /f /im dlc.exe /t
 taskkill /f /im "dlc.exe *32" /t
-@echo off & color a
+@echo off & color e
 setlocal enabledelayedexpansion
 if %1=="" exit
 set locate=%1
 set reproducing=666
-..\cmdbkg Black.bmp 1
+..\cmdbkg background\Black.bmp 33
 :loop
 title SongDB
 mode 120,30
+color e
 cd "%locate%\Files\Sounds"
 cls
 echo.
