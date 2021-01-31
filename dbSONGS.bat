@@ -47,11 +47,11 @@ if not exist "Laur-Sound-Chimera.mp3" if "%input%"=="3" wget https://github.com/
 
 if exist "DeadToMe.mp3" if exist "DeadToMe.bmp" if "%input%"=="4" start dlc -w -p "DeadToMe.mp3" & start /b ../cmdbkg DeadToMe.bmp 33
 if not exist "DeadToMe.bmp" if "%input%"=="4" wget https://github.com/ZorritoYT/SongsTMP/raw/main/DeadToMe.bmp & del /q .wget-hsts
-if not exist "DeadToMe.mp3" if "%input%"=="4" wget https://github.com/ZorritoYT/SongsTMP/raw/main/DeadToMe.mp3 & del /q .wget-hsts & start dlc -w -p "DeadToMe.mp3" & start /b ../cmdbkg DeadToMe.bmp 33
+if not exist "DeadToMe.mp3" if "%input%"=="4" wget https://github.com/ZorritoYT/SongsTMP/raw/main/DeadToMe.mp3 & del /q .wget-hsts & start dlc -w -p "DeadToMe.mp3" & timeout 1 /nobreak >nul & start /b ../cmdbkg DeadToMe.bmp 33
 
 if exist "SunFlower.mp3" if "%input%"=="5" start dlc -w -p "SunFlower.mp3" & start /b ../cmdbkg SunFlower.bmp 33
 if not exist "SunFlower.bmp" if "%input%"=="5" wget https://github.com/ZorritoYT/SongsTMP/raw/main/SunFlower.bmp & del /q .wget-hsts
-if not exist "SunFlower.mp3" if "%input%"=="5" wget https://github.com/ZorritoYT/SongsTMP/raw/main/SunFlower.mp3 & del /q .wget-hsts & start dlc -w -p "SunFlower.mp3" & start /b ../cmdbkg SunFlower.bmp 33
+if not exist "SunFlower.mp3" if "%input%"=="5" wget https://github.com/ZorritoYT/SongsTMP/raw/main/SunFlower.mp3 & del /q .wget-hsts & start dlc -w -p "SunFlower.mp3" & timeout 1 /nobreak >nul & start /b ../cmdbkg SunFlower.bmp 33
 
 goto loop
 
