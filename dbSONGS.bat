@@ -58,6 +58,4 @@ goto loop
 :endS
 taskkill /f /im dlc.exe /t
 taskkill /f /im "dlc.exe *32" /t
-set reproducing=666
-start /b ..\cmdbkg background\Black.bmp 33
 goto loop
