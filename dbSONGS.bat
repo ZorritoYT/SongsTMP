@@ -71,8 +71,8 @@ if not exist "xd.bmp" if "%input%"=="7" wget https://github.com/ZorritoYT/SongsT
 if not exist "XD.mp3" if "%input%"=="7" wget https://github.com/ZorritoYT/SongsTMP/raw/main/XD.mp3 & del /q .wget-hsts
 
 if exist "Linkin Park - In The End.mp3" if "%input%"=="8" start dlc -w -p "Linkin Park - In The End.mp3" & start /b ../cmdbkg Linkin Park - In The End.bmp 33
-if not exist "Linkin Park - In The End.bmp" if "%input%"=="8" wget https://github.com/ZorritoYT/SongsTMP/raw/main/Linkin Park - In The End.bmp & del /q .wget-hsts
-if not exist "Linkin Park - In The End.mp3" if "%input%"=="8" wget https://github.com/ZorritoYT/SongsTMP/raw/main/Linkin Park - In The End.mp3 & del /q .wget-hsts
+if not exist "Linkin Park - In The End.bmp" if "%input%"=="8" wget "https://github.com/ZorritoYT/SongsTMP/raw/main/Linkin Park - In The End.bmp" & del /q .wget-hsts
+if not exist "Linkin Park - In The End.mp3" if "%input%"=="8" wget "https://github.com/ZorritoYT/SongsTMP/raw/main/Linkin Park - In The End.mp3" & del /q .wget-hsts
 
 goto loop
 
