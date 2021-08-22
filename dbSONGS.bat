@@ -41,6 +41,8 @@ echo.
 if not exist "LinkinPark-InTheEnd.mp3" "%locate%\batbox" /c 0x4 /d " 8) Linkin Park - In The End [Requiere download]"
 if exist "LinkinPark-InTheEnd.mp3" "%locate%\batbox" /c 0xa /d " 8) Linkin Park - In The End"
 echo.
+if not exist "MamichulaTrueno.mp3" "%locate%\batbox" /c 0x4 /d " 9) Trueno & Nicki Nicole - Mamichula [Requiere download]"
+if exist "MamichulaTrueno.mp3" "%locate%\batbox" /c 0xa /d " 9) Trueno & Nicki Nicole - Mamichula"
 echo.
 set/p input="SongsDB/> "
 if "%input%"=="return" goto :eof
@@ -74,6 +76,9 @@ if exist "LinkinPark-InTheEnd.mp3" if "%input%"=="8" start dlc -w -p "LinkinPark
 if not exist "LinkinPark-InTheEnd.bmp" if "%input%"=="8" wget "https://github.com/ZorritoYT/SongsTMP/raw/main/LinkinPark-InTheEnd.bmp" & del /q .wget-hsts
 if not exist "LinkinPark-InTheEnd.mp3" if "%input%"=="8" wget "https://github.com/ZorritoYT/SongsTMP/raw/main/LinkinPark-InTheEnd.mp3" & del /q .wget-hsts
 
+if exist "MamichulaTrueno.mp3" if "%input%"=="9" start dlc -w -p "MamichulaTrueno.mp3" & start /b ../cmdbkg MamichulaTrueno.bmp 33
+if not exist "MamichulaTrueno.bmp" if "%input%"=="9" wget https://github.com/ZorritoYT/SongsTMP/raw/main/MamichulaTrueno.bmp & del /q .wget-hsts
+if not exist "MamichulaTrueno.mp3" if "%input%"=="9" wget https://github.com/ZorritoYT/SongsTMP/raw/main/MamichulaTrueno.mp3 & del /q .wget-hsts
 goto loop
 
 :endS
