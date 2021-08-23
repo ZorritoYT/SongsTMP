@@ -44,6 +44,9 @@ echo.
 if not exist "MamichulaTrueno.mp3" "%locate%\batbox" /c 0x4 /d " 9) Trueno & Nicki Nicole - Mamichula [Requiere download]"
 if exist "MamichulaTrueno.mp3" "%locate%\batbox" /c 0xa /d " 9) Trueno & Nicki Nicole - Mamichula"
 echo.
+if not exist "SenpaiSana.mp3" "%locate%\batbox" /c 0x4 /d " a) Senpai. - Sana [Requiere download]"
+if exist "SenpaiSana.mp3" "%locate%\batbox" /c 0xa /d " a) Senpai. - Sana"
+echo.
 set/p input="SongsDB/> "
 if "%input%"=="return" goto :eof
 if "%input%"=="stop" goto endS
@@ -79,6 +82,10 @@ if not exist "LinkinPark-InTheEnd.mp3" if "%input%"=="8" wget "https://github.co
 if exist "MamichulaTrueno.mp3" if "%input%"=="9" start dlc -w -p "MamichulaTrueno.mp3" & start /b ../cmdbkg MamichulaTrueno.bmp 33
 if not exist "MamichulaTrueno.bmp" if "%input%"=="9" wget https://github.com/ZorritoYT/SongsTMP/raw/main/MamichulaTrueno.bmp & del /q .wget-hsts
 if not exist "MamichulaTrueno.mp3" if "%input%"=="9" wget https://github.com/ZorritoYT/SongsTMP/raw/main/MamichulaTrueno.mp3 & del /q .wget-hsts
+
+if exist "SenpaiSana.mp3" if "%input%"=="a" start dlc -w -p "SenpaiSana.mp3" & start /b ../cmdbkg SenpaiSana.bmp 33
+if not exist "SenpaiSana.bmp" if "%input%"=="a" wget https://github.com/ZorritoYT/SongsTMP/raw/main/SenpaiSana.bmp & del /q .wget-hsts
+if not exist "SenpaiSana.mp3" if "%input%"=="a" wget https://github.com/ZorritoYT/SongsTMP/raw/main/SenpaiSana.mp3 & del /q .wget-hsts
 goto loop
 
 :endS
