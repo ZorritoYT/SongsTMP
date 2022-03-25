@@ -50,40 +50,40 @@ echo.
 set/p input="SongsDB/> "
 if "%input%"=="return" goto :eof
 if "%input%"=="stop" goto endS
-if exist "laresaka-supermerk2.mp3" if "%input%"=="1" start dlc -w -p "laresaka-supermerk2.mp3"
+if exist "laresaka-supermerk2.mp3" if "%input%"=="1" taskkill /f /im dlc.exe /t & taskkill /f /im "dlc.exe *32" /t & start dlc -w -p "laresaka-supermerk2.mp3"
 if not exist "laresaka-supermerk2.mp3" if "%input%"=="1" wget https://github.com/ZorritoYT/SongsTMP/raw/main/laresaka-supermerk2.mp3 & del /q .wget-hsts & start dlc -w -p "laresaka-supermerk2.mp3"
 
-if exist "MegalovaniaPianoCover.mp3" if "%input%"=="2" start dlc -w -p "MegalovaniaPianoCover.mp3"
+if exist "MegalovaniaPianoCover.mp3" if "%input%"=="2" taskkill /f /im dlc.exe /t & taskkill /f /im "dlc.exe *32" /t & start dlc -w -p "MegalovaniaPianoCover.mp3"
 if not exist "MegalovaniaPianoCover.mp3" if "%input%"=="2" wget https://github.com/ZorritoYT/SongsTMP/raw/main/MegalovaniaPianoCover.mp3 & del /q .wget-hsts & start dlc -w -p "MegalovaniaPianoCover.mp3"
 
-if exist "Laur-Sound-Chimera.mp3" if "%input%"=="3" start dlc -w -p "Laur-Sound-Chimera.mp3"
+if exist "Laur-Sound-Chimera.mp3" if "%input%"=="3" taskkill /f /im dlc.exe /t & taskkill /f /im "dlc.exe *32" /t & start dlc -w -p "Laur-Sound-Chimera.mp3"
 if not exist "Laur-Sound-Chimera.mp3" if "%input%"=="3" wget https://github.com/ZorritoYT/SongsTMP/raw/main/Laur-Sound-Chimera.mp3 & del /q .wget-hsts & start dlc -w -p "Laur-Sound-Chimera.mp3"
 
-if exist "DeadToMe.mp3" if exist "DeadToMe.bmp" if "%input%"=="4" start dlc -w -p "DeadToMe.mp3" & start /b ../cmdbkg DeadToMe.bmp 33
+if exist "DeadToMe.mp3" if exist "DeadToMe.bmp" if "%input%"=="4" taskkill /f /im dlc.exe /t & taskkill /f /im "dlc.exe *32" /t & start dlc -w -p "DeadToMe.mp3" & start /b ../cmdbkg DeadToMe.bmp 33
 if not exist "DeadToMe.bmp" if "%input%"=="4" wget https://github.com/ZorritoYT/SongsTMP/raw/main/DeadToMe.bmp & del /q .wget-hsts
 if not exist "DeadToMe.mp3" if "%input%"=="4" wget https://github.com/ZorritoYT/SongsTMP/raw/main/DeadToMe.mp3 & del /q .wget-hsts
 
-if exist "SunFlower.mp3" if "%input%"=="5" start dlc -w -p "SunFlower.mp3" & start /b ../cmdbkg SunFlower.bmp 33
+if exist "SunFlower.mp3" if "%input%"=="5" taskkill /f /im dlc.exe /t & taskkill /f /im "dlc.exe *32" /t & start dlc -w -p "SunFlower.mp3" & start /b ../cmdbkg SunFlower.bmp 33
 if not exist "SunFlower.bmp" if "%input%"=="5" wget https://github.com/ZorritoYT/SongsTMP/raw/main/SunFlower.bmp & del /q .wget-hsts
 if not exist "SunFlower.mp3" if "%input%"=="5" wget https://github.com/ZorritoYT/SongsTMP/raw/main/SunFlower.mp3 & del /q .wget-hsts
 
-if exist "Ghost.mp3" if "%input%"=="6" start dlc -w -p "Ghost.mp3" & start /b ../cmdbkg Ghost.bmp 33
+if exist "Ghost.mp3" if "%input%"=="6" taskkill /f /im dlc.exe /t & taskkill /f /im "dlc.exe *32" /t & start dlc -w -p "Ghost.mp3" & start /b ../cmdbkg Ghost.bmp 33
 if not exist "Ghost.bmp" if "%input%"=="6" wget https://github.com/ZorritoYT/SongsTMP/raw/main/Ghost.bmp & del /q .wget-hsts
 if not exist "Ghost.mp3" if "%input%"=="6" wget https://github.com/ZorritoYT/SongsTMP/raw/main/Ghost.mp3 & del /q .wget-hsts
 
-if exist "XD.mp3" if "%input%"=="7" start dlc -w -p "XD.mp3" & start /b ../cmdbkg xd.bmp 33
+if exist "XD.mp3" if "%input%"=="7" taskkill /f /im dlc.exe /t & taskkill /f /im "dlc.exe *32" /t & start dlc -w -p "XD.mp3" & start /b ../cmdbkg xd.bmp 33
 if not exist "xd.bmp" if "%input%"=="7" wget https://github.com/ZorritoYT/SongsTMP/raw/main/xd.bmp & del /q .wget-hsts
 if not exist "XD.mp3" if "%input%"=="7" wget https://github.com/ZorritoYT/SongsTMP/raw/main/XD.mp3 & del /q .wget-hsts
 
-if exist "LinkinPark-InTheEnd.mp3" if "%input%"=="8" start dlc -w -p "LinkinPark-InTheEnd.mp3" & start /b ../cmdbkg LinkinPark-InTheEnd.bmp 33
+if exist "LinkinPark-InTheEnd.mp3" if "%input%"=="8" taskkill /f /im dlc.exe /t & taskkill /f /im "dlc.exe *32" /t & start dlc -w -p "LinkinPark-InTheEnd.mp3" & start /b ../cmdbkg LinkinPark-InTheEnd.bmp 33
 if not exist "LinkinPark-InTheEnd.bmp" if "%input%"=="8" wget "https://github.com/ZorritoYT/SongsTMP/raw/main/LinkinPark-InTheEnd.bmp" & del /q .wget-hsts
 if not exist "LinkinPark-InTheEnd.mp3" if "%input%"=="8" wget "https://github.com/ZorritoYT/SongsTMP/raw/main/LinkinPark-InTheEnd.mp3" & del /q .wget-hsts
 
-if exist "MamichulaTrueno.mp3" if "%input%"=="9" start dlc -w -p "MamichulaTrueno.mp3" & start /b ../cmdbkg MamichulaTrueno.bmp 33
+if exist "MamichulaTrueno.mp3" if "%input%"=="9" taskkill /f /im dlc.exe /t & taskkill /f /im "dlc.exe *32" /t & start dlc -w -p "MamichulaTrueno.mp3" & start /b ../cmdbkg MamichulaTrueno.bmp 33
 if not exist "MamichulaTrueno.bmp" if "%input%"=="9" wget https://github.com/ZorritoYT/SongsTMP/raw/main/MamichulaTrueno.bmp & del /q .wget-hsts
 if not exist "MamichulaTrueno.mp3" if "%input%"=="9" wget https://github.com/ZorritoYT/SongsTMP/raw/main/MamichulaTrueno.mp3 & del /q .wget-hsts
 
-if exist "SenpaiSana.mp3" if "%input%"=="a" start dlc -w -p "SenpaiSana.mp3" & start /b ../cmdbkg SenpaiSana.bmp 33
+if exist "SenpaiSana.mp3" if "%input%"=="a" taskkill /f /im dlc.exe /t & taskkill /f /im "dlc.exe *32" /t & start dlc -w -p "SenpaiSana.mp3" & start /b ../cmdbkg SenpaiSana.bmp 33
 if not exist "SenpaiSana.bmp" if "%input%"=="a" wget https://github.com/ZorritoYT/SongsTMP/raw/main/SenpaiSana.bmp & del /q .wget-hsts
 if not exist "SenpaiSana.mp3" if "%input%"=="a" wget https://github.com/ZorritoYT/SongsTMP/raw/main/SenpaiSana.mp3 & del /q .wget-hsts
 goto loop
