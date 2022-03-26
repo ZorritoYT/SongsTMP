@@ -13,7 +13,7 @@ color e
 cd "%locate%\Files\Sounds"
 cls
 echo.
-echo Escribe el numero de la cancion a descargar
+echo Escribe el numero/letra de la cancion a descargar/escuchar
 echo.
 echo Commandos : return(salir) stop(Detener musica)
 echo.
