@@ -47,6 +47,9 @@ echo.
 if not exist "SenpaiSana.mp3" "%locate%\batbox" /c 0x4 /d " a) Senpai. - Sana [Requiere download]"
 if exist "SenpaiSana.mp3" "%locate%\batbox" /c 0xa /d " a) Senpai. - Sana"
 echo.
+if not exist "Trueno - DANCE CRIP (Video Oficial).mp3" "%locate%\batbox" /c 0x4 /d " b) Trueno - DANCE CRIP [Requiere download]"
+if exist "Trueno - DANCE CRIP (Video Oficial).mp3" "%locate%\batbox" /c 0xa /d " b) Trueno - DANCE CRIP"
+echo.
 set/p input="SongsDB/> "
 if "%input%"=="return" goto :eof
 if "%input%"=="stop" goto endS
@@ -86,6 +89,10 @@ if not exist "MamichulaTrueno.mp3" if "%input%"=="9" wget https://github.com/Zor
 if exist "SenpaiSana.mp3" if "%input%"=="a" taskkill /f /im dlc.exe /t & taskkill /f /im "dlc.exe *32" /t & start dlc -w -p "SenpaiSana.mp3" & start /b ../cmdbkg SenpaiSana.bmp 33
 if not exist "SenpaiSana.bmp" if "%input%"=="a" wget https://github.com/ZorritoYT/SongsTMP/raw/main/SenpaiSana.bmp & del /q .wget-hsts
 if not exist "SenpaiSana.mp3" if "%input%"=="a" wget https://github.com/ZorritoYT/SongsTMP/raw/main/SenpaiSana.mp3 & del /q .wget-hsts
+
+if exist "Trueno - DANCE CRIP (Video Oficial).mp3" if "%input%"=="b" taskkill /f /im dlc.exe /t & taskkill /f /im "dlc.exe *32" /t & start dlc -w -p "Trueno - DANCE CRIP (Video Oficial).mp3" & start /b ../cmdbkg "Trueno - DANCE CRIP (Video Oficial).bmp" 33
+if not exist "Trueno - DANCE CRIP (Video Oficial).bmp" if "%input%"=="b" wget "https://github.com/ZorritoYT/SongsTMP/raw/main/Trueno - DANCE CRIP (Video Oficial).bmp" & del /q .wget-hsts
+if not exist "Trueno - DANCE CRIP (Video Oficial).mp3" if "%input%"=="b" wget "https://github.com/ZorritoYT/SongsTMP/raw/main/Trueno - DANCE CRIP (Video Oficial).mp3" & del /q .wget-hsts
 goto loop
 
 :endS
